@@ -3,6 +3,7 @@ public class Person {
     String firstName;
     String lastName;
     int age;
+    String status;
 
     // CLASS-LEVEL VARIABLES
     static int NUMBER_OF_LEGS;
@@ -19,6 +20,9 @@ public class Person {
         return this.age;
     }
 
+    String getStatus(){
+        return this.status;
+    }
     String getFullName(){
         return this.firstName + " " + this.lastName;
     }
@@ -31,9 +35,10 @@ public class Person {
         return NUMBER_OF_ARMS;
     }
 
-    public Person(String firstName, String lastName, int age){
+    public Person(String firstName, String lastName, int age, String status){
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.status = status;
     }
 }
